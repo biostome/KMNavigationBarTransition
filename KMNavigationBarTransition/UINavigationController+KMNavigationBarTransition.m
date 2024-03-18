@@ -91,7 +91,7 @@
     UIViewController *appearingViewController = self.viewControllers[self.viewControllers.count - 2];
     if (appearingViewController.km_transitionNavigationBar) {
         UINavigationBar *appearingNavigationBar = appearingViewController.km_transitionNavigationBar;
-        if (@available(iOS 15, *)) {
+        if (@available(iOS 13, *)) {
             self.navigationBar.standardAppearance = appearingNavigationBar.standardAppearance;
             self.navigationBar.scrollEdgeAppearance = appearingNavigationBar.scrollEdgeAppearance;
         } else {
@@ -114,7 +114,7 @@
     [disappearingViewController km_addTransitionNavigationBarIfNeeded];
     if (viewController.km_transitionNavigationBar) {
         UINavigationBar *appearingNavigationBar = viewController.km_transitionNavigationBar;
-        if (@available(iOS 15, *)) {
+        if (@available(iOS 13, *)) {
             self.navigationBar.standardAppearance = appearingNavigationBar.standardAppearance;
             self.navigationBar.scrollEdgeAppearance = appearingNavigationBar.scrollEdgeAppearance;
         } else {
@@ -138,7 +138,7 @@
     UIViewController *rootViewController = self.viewControllers.firstObject;
     if (rootViewController.km_transitionNavigationBar) {
         UINavigationBar *appearingNavigationBar = rootViewController.km_transitionNavigationBar;
-        if (@available(iOS 15, *)) {
+        if (@available(iOS 13, *)) {
             self.navigationBar.standardAppearance = appearingNavigationBar.standardAppearance;
             self.navigationBar.scrollEdgeAppearance = appearingNavigationBar.scrollEdgeAppearance;
         } else {
